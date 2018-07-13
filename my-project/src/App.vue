@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <!-- <m-header></m-header> -->
-    <!-- <tab></tab> -->
-    <!-- <keep-alive> -->
-      <!-- <router-view/> -->
-      <MHeader/>
-    <!-- </keep-alive> -->
+    <m-header></m-header>
+    <Tab></Tab>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
     <!-- <player></player> -->
   </div>
 </template>
@@ -14,12 +13,12 @@
 <script>
 
 import MHeader from './components/m-header/m-header'
-
-
+import Tab from './components/tab/tab'
 export default {
   name: 'App',
   components : {
-       MHeader
+       MHeader,
+       Tab
   }
 }
 </script>

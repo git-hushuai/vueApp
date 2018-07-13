@@ -21,7 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../common/scss/variable.scss";
-
+@import "../../common/scss/ali-icon.scss";
 .m-header {
     position: relative;
     height: 44px;
@@ -47,6 +47,17 @@ export default {
             color: $color-theme-l;
         }
     }
+    .search {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    .iconfont {
+        display: block;
+        padding: 12px;
+        font-size: 18px;
+        color: $color-theme-l;
+    }
+  }
 }
 </style>
 
