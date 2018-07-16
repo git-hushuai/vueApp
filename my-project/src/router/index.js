@@ -1,23 +1,24 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import SubPage from '@/components/123'
-
-
-
+// import Recommend from '../components/recommend/recommend.vue'
 Vue.use(Router)
 
+const Recommend = (resolve) => {
+  import('@/components/recommend/recommend').then((module) => {
+    resolve(module)
+  })
+}
 export default new Router({
   routes: [
-    {
+     {
+      // 默认跳转到 recommend
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/recommend'
     },
     {
-      path: '/123',
-      name: 'subPage',
-      component: SubPage
+      path: '/recommend',
+      name: 'Recommend',
+      component: Recommend
     },
   ]
 })

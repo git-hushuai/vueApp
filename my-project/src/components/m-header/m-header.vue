@@ -20,8 +20,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../common/scss/variable.scss";
-@import "../../common/scss/ali-icon.scss";
+@import "@/common/scss/variable.scss";
+@import "@/common/scss/ali-icon.scss";
 .m-header {
     position: relative;
     height: 44px;

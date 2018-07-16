@@ -24,6 +24,7 @@ export default {
 </script>
 
 <style>
+/* @import '@/common/scss/index.scss'; */
 #app {
   position: fixed;
   top: 0;

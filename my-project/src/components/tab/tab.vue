@@ -24,7 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../common/scss/variable.scss";
+@import "@/common/scss/variable.scss";
 
 .tab{
     display: flex;
@@ -37,7 +37,6 @@ export default {
         flex: 1;
         text-align: center;
         color: $color-text-lm;
-        // background: lightcoral;
         span{
             padding-bottom: 3px;
         }
